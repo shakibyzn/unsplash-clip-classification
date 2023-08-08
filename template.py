@@ -7,18 +7,18 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 list_of_files = [
     ".github/workflows/.gitkeep",
-    f"src/__init__.py",
-    f"src/components/__init__.py",
-    f"src/utils/__init__.py",
-    f"src/utils/common.py",
-    f"src/pipeline/__init__.py",
-    f"src/entity/__init__.py",
-    f"src/entity/config_entity.py"
+    "src/__init__.py",
+    "src/components/__init__.py",
+    "src/utils/__init__.py",
+    "src/utils/common.py",
+    "src/pipeline/__init__.py",
+    "src/entity/__init__.py",
+    "src/entity/config_entity.py",
     "config/config.yaml",
     "dvc.yaml",
     "params.yaml",
     "requirements.txt",
-    "templates/index.html"
+    "templates/index.html",
 ]
 
 
