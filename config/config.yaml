@@ -1,0 +1,4 @@
+
+data_ingestion:
+  data_dir: data/photos.tsv000
+  images_dir: data/images
