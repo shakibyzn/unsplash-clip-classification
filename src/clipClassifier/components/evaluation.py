@@ -1,5 +1,5 @@
-from src.clipClassifier import logger
-from src.clipClassifier.entity.config_entity import EvaluationConfig
+from clipClassifier import logger
+from clipClassifier.entity.config_entity import EvaluationConfig
 from pathlib import Path
 from PIL import Image
 import torch

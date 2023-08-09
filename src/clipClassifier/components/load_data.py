@@ -1,6 +1,6 @@
 import pandas as pd
-from src.clipClassifier import logger
-from src.clipClassifier.entity.config_entity import DataIngestionConfig
+from clipClassifier import logger
+from clipClassifier.entity.config_entity import DataIngestionConfig
 from pathlib import Path
 import os
 import requests

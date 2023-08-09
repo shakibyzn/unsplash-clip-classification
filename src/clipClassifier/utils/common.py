@@ -3,7 +3,7 @@ from box import ConfigBox
 from box.exceptions import BoxValueError
 from pathlib import Path
 import yaml
-from src.clipClassifier import logger
+from clipClassifier import logger
 
 
 @ensure_annotations

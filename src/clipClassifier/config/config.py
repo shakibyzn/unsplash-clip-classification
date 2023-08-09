@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
-from src.clipClassifier.utils.common import read_yaml
-from src.clipClassifier.entity.config_entity import DataIngestionConfig, EvaluationConfig
+from clipClassifier.utils.common import read_yaml
+from clipClassifier.entity.config_entity import DataIngestionConfig, EvaluationConfig
 
 
 class ConfigurationManager:

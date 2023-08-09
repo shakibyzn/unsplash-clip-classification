@@ -1,6 +1,6 @@
-from src.clipClassifier.components.evaluation import Evaluation
-from src.clipClassifier.config.config import ConfigurationManager
-from src.clipClassifier import logger
+from clipClassifier.components.evaluation import Evaluation
+from clipClassifier.config.config import ConfigurationManager
+from clipClassifier import logger
 from pathlib import Path
 
 STAGE_NAME = 'Evaluation Stage'
