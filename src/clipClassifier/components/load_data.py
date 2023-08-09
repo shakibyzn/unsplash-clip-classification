@@ -26,7 +26,5 @@ class DataIngestion:
                 with open(img_path, 'wb') as f:
                     f.write(response.content)
 
-            break
-
 
 
