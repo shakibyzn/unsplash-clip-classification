@@ -1,0 +1,11 @@
+numpy==1.25.2
+pandas==1.5.3
+torch==2.0.1
+torchvision==0.15.2
+clip @ git+https://github.com/openai/CLIP.git@a1d071733d7111c9c014f024669f959182114e33
+dvc==3.13.3
+dvc-s3==2.23.0
+ensure==1.0.3
+Flask==2.3.2
+Flask-Cors==4.0.0
+Pillow==10.0.0
