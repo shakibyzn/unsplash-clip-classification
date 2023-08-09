@@ -1,0 +1,47 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/clipClassifier/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: fea9b07b7a199edc7d8e29ae057f2cb5
+      size: 169
+    - path: src/clipClassifier/pipeline/stage_01_data_ingestion.py
+      hash: md5
+      md5: ccc1fa8d08fdfda4cd581502deb2ac49
+      size: 834
+    outs:
+    - path: data/images
+      hash: md5
+      md5: a1aee4f2aed168362c279125ccea7f41.dir
+      size: 40611279
+      nfiles: 20
+  model_evaluation:
+    cmd: python src/clipClassifier/pipeline/stage_02_evaluation.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: fea9b07b7a199edc7d8e29ae057f2cb5
+      size: 169
+    - path: data/images
+      hash: md5
+      md5: a1aee4f2aed168362c279125ccea7f41.dir
+      size: 40611279
+      nfiles: 20
+    - path: src/clipClassifier/pipeline/stage_02_evaluation.py
+      hash: md5
+      md5: b04e0bc4ec81d4359e685274ce94f4e4
+      size: 798
+    params:
+      params.yaml:
+        BATCH_SIZE: 32
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+    outs:
+    - path: predictions.json
+      hash: md5
+      md5: fe6e8cdcb23530452928fe2df2ad515c
+      size: 1044

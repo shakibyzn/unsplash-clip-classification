@@ -1,0 +1,21 @@
+stages:
+  data_ingestion:
+    cmd: python src/clipClassifier/pipeline/stage_01_data_ingestion.py
+    deps:
+      - src/clipClassifier/pipeline/stage_01_data_ingestion.py
+      - config/config.yaml
+    outs:
+      - data/images
+
+
+  model_evaluation:
+    cmd: python src/clipClassifier/pipeline/stage_02_evaluation.py
+    deps:
+      - src/clipClassifier/pipeline/stage_02_evaluation.py
+      - config/config.yaml
+      - data/images
+    params:
+      - IMAGE_SIZE
+      - BATCH_SIZE
+    outs:
+      - predictions.json
