@@ -2,3 +2,9 @@
 data_ingestion:
   data_dir: data/photos.tsv000
   images_dir: data/images
+
+
+evaluation:
+  model_path: artifacts/mode.h5
+  model_name: ViT-B/32
+  images_dir: data/images
