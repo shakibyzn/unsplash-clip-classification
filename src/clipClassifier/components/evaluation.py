@@ -23,7 +23,7 @@ class Evaluation:
         len_images = len(os.listdir(Path(self.config.images_dir)))
 
         # evaluation
-        loggeer.info("evaluation started: reading images")
+        logger.info("evaluation started: reading images")
         for i in range(0, len_images, self.config.batch_size):
             images = [
                 self.preprocess(
