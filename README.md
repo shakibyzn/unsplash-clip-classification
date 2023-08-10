@@ -15,7 +15,7 @@ Classifying images by the time of day using the Unsplash dataset. To classify im
 Clone the repository
 
 ```
-$ git clone https://github.com/entbappy/Chicken-Disease-Classification--Project
+$ git clone https://github.com/shakibyzn/unsplash-clip-classification.git
 ```
 ### STEP 01- Create a virtual environment
 
@@ -83,7 +83,7 @@ You can follow [this](https://www.youtube.com/watch?v=p1bfK8ZJgkE&t=12662s) yout
 
 
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken
+    - Save the URI: your_prefix.dkr.your_region.amazonaws.com/your_repository
 
 
 ## 4. Create EC2 machine (Ubuntu)
