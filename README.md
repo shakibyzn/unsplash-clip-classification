@@ -1,5 +1,7 @@
 # unsplash-clip-classification
-Classifying images by the time of day using the Unsplash dataset. To classify images, I use the CLIP model without fine-tuning, and as a zero-shot classifier. This is a hands-on project to start with MLOps and CI/CI pipelines for machine learning projects.
+Classifying images by the time of day using the Unsplash dataset. To classify images, I use the CLIP model without fine-tuning, and as a zero-shot classifier. This is a hands-on project to start with MLOps and CI/CI pipelines for machine learning projects. The demo of the project is shown below:
+
+![alt text](demo.png)
 
 ### Techniques
 
@@ -32,7 +34,10 @@ $ source your_venv/bin/activate
 ```
 $ pip install -r requirements.txt
 ```
-
+Package the project
+```
+$ python setup.py install
+```
 
 Finally run the following command
 
@@ -40,10 +45,7 @@ Finally run the following command
 $ python app.py
 ```
 
-Now,
-```
-open up your browser, and go to localhost:8080
-```
+Now, open up your browser, and go to localhost:8080
 
 
 
